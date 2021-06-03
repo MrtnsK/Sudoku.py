@@ -75,7 +75,6 @@ class Ui_MainWindow(object):
 			self.plainTextEdit.setPlainText(check.layout(self.grid))
 
 	def solve(self):
-		print(check.check_valid(self.grid))
 		if check.check_valid(self.grid) is True:
 			tmp = datetime.datetime.now()
 			solver.solver(self.grid)

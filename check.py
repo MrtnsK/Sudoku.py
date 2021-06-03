@@ -2,7 +2,6 @@ import numpy as np
 import re
 
 def check_valid(grid):
-	print(grid)
 	for i in range(0,8):
 		for j in range(0,8):
 			if grid[i][j] != 0 and check_square(grid[i][j], i, j, grid) is False\
